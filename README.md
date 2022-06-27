@@ -11,3 +11,6 @@ Hadoop, bahasa pemrograman java, dan nodejs.
 
 ## Screenshot Hasil
 ![](https://github.com/Almasyriqi/UAS-Covid19Job-Hadoop-MapReduce/raw/master/screenshot/hasil.png)
+
+## URL Video Penjelasan
+https://youtu.be/lavCAcYn-9w
