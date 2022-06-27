@@ -31,7 +31,7 @@ public class CovidMapper extends MapReduceBase implements Mapper<LongWritable, T
 
         // Laporkan ke kolektor
         if (cases.compareTo("Cumulative_cases") != 0) {
-            this.country_name.set(format("%s; ", country));
+            this.country_name.set(format("%s: ", country));
             this.data.set(format("%s;%s", cases, death));
             System.out.println(this.data);
             output.collect(this.country_name, this.data);

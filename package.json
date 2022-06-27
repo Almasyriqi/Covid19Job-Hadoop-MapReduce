@@ -1,0 +1,30 @@
+{
+  "name": "covid19job",
+  "version": "1.0.0",
+  "description": "HadoopMapReduce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Almasyriqi/UAS-Covid19Job-Hadoop-MapReduce.git"
+  },
+  "keywords": [
+    "hadoop",
+    "mapreduce",
+    "java",
+    "nodejs"
+  ],
+  "author": "M.Syifaul Ikrom Almasyriqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Almasyriqi/UAS-Covid19Job-Hadoop-MapReduce/issues"
+  },
+  "homepage": "https://github.com/Almasyriqi/UAS-Covid19Job-Hadoop-MapReduce#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-ssh": "^12.0.4",
+    "webhdfs": "^1.2.0"
+  }
+}

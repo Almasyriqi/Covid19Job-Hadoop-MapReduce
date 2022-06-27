@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea106d64-ed92-4390-8018-9af5acd571a6" name="Changes" comment="membuat class mapper dan reducer">
-      <change afterPath="$PROJECT_DIR$/run-job.sh" afterDir="false" />
+    <list default="true" id="ea106d64-ed92-4390-8018-9af5acd571a6" name="Changes" comment="membuat run-job.sh">
+      <change afterPath="$PROJECT_DIR$/WHO-COVID-19-global-data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coba.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-job.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-job.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CovidMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CovidMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CovidReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CovidReducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,19 +37,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2B9BMZdiYJDEuFnSc1XBe8wTeKf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656309917767</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="membuat run-job.sh">
+      <created>1656320055868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656320055868</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,7 +91,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="membuat class mapper dan reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="membuat class mapper dan reducer" />
+    <MESSAGE value="membuat run-job.sh" />
+    <option name="LAST_COMMIT_MESSAGE" value="membuat run-job.sh" />
   </component>
 </project>
