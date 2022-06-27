@@ -1,4 +1,5 @@
 package org.example;
+
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.MapReduceBase;
@@ -7,10 +8,13 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
 
 import java.io.IOException;
+
 import static java.lang.String.format;
+
 public class CovidMapper extends MapReduceBase implements Mapper<LongWritable, Text, Text, Text> {
     private Text country_name = new Text();
     private Text data = new Text();
+
     @Override
     public void map(LongWritable key, Text value, OutputCollector<Text, Text> output, Reporter reporter)
             throws IOException {
@@ -18,21 +22,18 @@ public class CovidMapper extends MapReduceBase implements Mapper<LongWritable, T
 
         // Pecah dulu berdasarkan ','
         String[] split = line.split(",");
-        System.out.println("Jumlah Split: " + split.length);
+        String country = split[2];
+        country = country.trim();
 
-        // cek apakah terdapat data case dan death
-        if(split.length > 7) {
-            String country = split[2];
-            country = country.trim();
-            System.out.println("Country name : " + country);
+        // Cari data cases dan death
+        String cases = split[5].trim();
+        String death = split[7].trim();
 
-            // Cari data views, like, dislike, comment
-            String cases = split[5];
-            String death = split[7];
-
-            // Laporkan ke kolektor
-            this.country_name.set(format("%s,",country));
-            this.data.set(format("%s,%s", cases, death));
+        // Laporkan ke kolektor
+        if (cases.compareTo("Cumulative_cases") != 0) {
+            this.country_name.set(format("%s; ", country));
+            this.data.set(format("%s;%s", cases, death));
+            System.out.println(this.data);
             output.collect(this.country_name, this.data);
         }
     }
